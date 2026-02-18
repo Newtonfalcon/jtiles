@@ -7,8 +7,8 @@ import Services from "../pages/Services";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
 
-import Loader from "./components/Loader";
-import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import Loader from "../components/Loader";
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -41,8 +41,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
 
-        {/* Floating WhatsApp */}
-        <FloatingWhatsApp />
+       
       </div>
     </>
   );
